@@ -7,11 +7,9 @@
 #include <memory>
 #include <iostream>
 #include <cmath>
-
 #include "Player.h"
 #include "Animation.h"
 #include "Header.h"
-
 #include <iostream>
 
 using namespace std;
@@ -29,22 +27,11 @@ int main()
     sf::RenderWindow app(sf::VideoMode(W, H), "Asteroids!");
     app.setFramerateLimit(60);
 
-    sf::Texture t1, t2, t3, t4, t5, t6, t7;
+    
     if (!t1.loadFromFile("D:/LuL/Downloads/Asteroids2.2/Asteroids2.2/images/spaceship.png")) {
         cerr << "Blad ladowania: spaceship.png" << endl;
         return 1;
     }
-
-
-    sf::Sprite background(t2);
-
-
-
-    Animation sRock(t4, 0, 0, 64, 64, 16, 0.2);
-    Animation sRock_small(t6, 0, 0, 64, 64, 16, 0.2);
-    Animation sPlayer(t1, 40, 0, 40, 40, 1, 0);
-    Animation sPlayer_go(t1, 40, 40, 40, 40, 1, 0);
-    Animation sExplosion_ship(t7, 0, 0, 192, 192, 64, 0.5);
 
     list<unique_ptr<Entity>> entities;
 
@@ -82,12 +69,6 @@ int main()
         else p->thrust = false;
 
 
-
-
-
-
-
-
         if (p->thrust) p->anim = sPlayer_go;
         else p->anim = sPlayer;
 
@@ -120,4 +101,5 @@ int main()
 
     return 0;
 }
+
 
