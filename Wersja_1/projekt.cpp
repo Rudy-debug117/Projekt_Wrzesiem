@@ -19,10 +19,10 @@ int main()
     srand(time(0));
 
 
-    float playerFireRate = 0.4f;
+    
     float playerSpeed = 2.0f;
     const float maxPlayerSpeed = 6.0f;
-    float fireCooldown = 0.0f;
+    
 
     sf::RenderWindow app(sf::VideoMode(W, H), "Asteroids!");
     app.setFramerateLimit(60);
@@ -101,5 +101,6 @@ int main()
 
     return 0;
 }
+
 
 
