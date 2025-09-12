@@ -73,11 +73,6 @@ int main()
         else p->anim = sPlayer;
 
 
-        for (auto& e : entities)
-            if (e->name == "explosion")
-                if (e->anim.isEnd()) e->life = 0;
-
-
 
         for (auto it = entities.begin(); it != entities.end(); )
         {
@@ -101,6 +96,7 @@ int main()
 
     return 0;
 }
+
 
 
 
