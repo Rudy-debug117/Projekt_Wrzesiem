@@ -31,27 +31,27 @@ int main()
 
     // --- tekstury ---
     sf::Texture t1, t2, t3, t4, t5, t6;
-    if (!t1.loadFromFile("C:/projekcik/images/spaceship.png")) {
+    if (!t1.loadFromFile("../txt//spaceship.png")) {
         cerr << "Błąd ładowania: spaceship.png" << endl;
         return 1;
     }
-    if (!t2.loadFromFile("C:/projekcik/images/explosions/type_C.png")) {
+    if (!t2.loadFromFile("../txt/type_C.png")) {
         cerr << "Błąd ładowania: explosions/type_C.png" << endl;
         return 1;
     }
-    if (!t3.loadFromFile("C:/projekcik/images/rock.png")) {
+    if (!t3.loadFromFile("../txt/rock.png")) {
         cerr << "Błąd ładowania: rock.png" << endl;
         return 1;
     }
-    if (!t4.loadFromFile("C:/projekcik/images/rock_small.png")) {
+    if (!t4.loadFromFile("../txt/rock_small.png")) {
         cerr << "Błąd ładowania: rock_small.png" << endl;
         return 1;
     }
-    if (!t5.loadFromFile("C:/projekcik/images/explosions/type_B.png")) {
+    if (!t5.loadFromFile("../txt/type_B.png")) {
         cerr << "Błąd ładowania: type_B.png" << endl;
         return 1;
     }
-    if (!t6.loadFromFile("C:/projekcik/images/fire_red.png")) {
+    if (!t6.loadFromFile("../txt/fire_red.png")) {
         cerr << "Błąd ładowania: fire_red.png" << endl;
         return 1;
     }
@@ -187,3 +187,4 @@ int main()
 
     return 0;
 }
+
