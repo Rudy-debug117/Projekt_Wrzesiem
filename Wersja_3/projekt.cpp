@@ -31,7 +31,7 @@ int main()
 
     // --- tekstury ---
     sf::Texture t1, t2, t3, t4, t5, t6;
-    if (!t1.loadFromFile("../txt//spaceship.png")) {
+    if (!t1.loadFromFile("../txt/spaceship.png")) {
         cerr << "Błąd ładowania: spaceship.png" << endl;
         return 1;
     }
@@ -187,4 +187,5 @@ int main()
 
     return 0;
 }
+
 
