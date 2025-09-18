@@ -52,12 +52,12 @@ int main()
     app.setFramerateLimit(60);
 
     sf::Texture t1, t2, t3, t4, t5, t6;
-    if (!t1.loadFromFile("C:/projekcik/images/spaceship.png")) return 1;
-    if (!t2.loadFromFile("C:/projekcik/images/explosions/type_C.png")) return 1;
-    if (!t3.loadFromFile("C:/projekcik/images/rock.png")) return 1;
-    if (!t4.loadFromFile("C:/projekcik/images/rock_small.png")) return 1;
-    if (!t5.loadFromFile("C:/projekcik/images/explosions/type_B.png")) return 1;
-    if (!t6.loadFromFile("C:/projekcik/images/fire_red.png")) return 1;
+    if (!t1.loadFromFile("../txt/spaceship.png")) return 1;
+    if (!t2.loadFromFile("../txt/type_C.png")) return 1;
+    if (!t3.loadFromFile("../txt/rock.png")) return 1;
+    if (!t4.loadFromFile("../txt/rock_small.png")) return 1;
+    if (!t5.loadFromFile("../txt/explosions/type_B.png")) return 1;
+    if (!t6.loadFromFile("../txt/fire_red.png")) return 1;
 
     Animation sRock(t3, 0, 0, 64, 64, 16, 0.2);
     Animation sRock_small(t4, 0, 0, 64, 64, 16, 0.2);
@@ -68,7 +68,7 @@ int main()
     Animation sBullet(t6, 0, 0, 32, 64, 16, 0.8);
 
     sf::Font orbitronFont;
-    if (!orbitronFont.loadFromFile("C:/projekcik/Orbitron/static/Orbitron-Regular.ttf")) return 1;
+    if (!orbitronFont.loadFromFile("../txt/Orbitron-Regular.ttf")) return 1;
 
     list<unique_ptr<Entity>> entities;
 
@@ -232,3 +232,4 @@ int main()
 
     return 0;
 }
+
